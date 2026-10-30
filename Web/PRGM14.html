@@ -1,0 +1,35 @@
+index.html 
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Factorial of a Number</title> 
+ 
+    <!-- External JavaScript File --> 
+    <script src="factorial.js"></script> 
+</head> 
+ 
+<body> 
+ 
+    <h2>Factorial of a Number</h2> 
+ 
+    <button onclick="findFactorial()">Find Factorial</button> 
+ 
+</body> 
+</html> 
+ 
+factorial.js 
+function findFactorial() { 
+    var n = parseInt(prompt("Enter a number:")); 
+    var fact = 1; 
+ 
+    if (n < 0) { 
+        alert("Factorial is not possible for negative numbers."); 
+    }  
+    else { 
+        for (var i = 1; i <= n; i++) { 
+            fact = fact * i; 
+        } 
+ 
+        alert("Factorial of " + n + " = " + fact); 
+    }
+}
