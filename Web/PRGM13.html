@@ -1,0 +1,48 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>External CSS with JavaScript</title> 
+ 
+    <!-- External CSS --> 
+    <link rel="stylesheet" type="text/css" href="style.css" /> 
+ 
+ 
+</head> 
+ 
+<body> 
+ 
+    <h1>External Style Sheet Demonstration</h1> 
+ 
+    <p id="message">Click the button to change this text.</p> 
+ 
+    <button onclick="changeText()">Click Here</button> 
+ 
+</body> 
+    <script> 
+        function changeText() { 
+            document.getElementById("message").innerHTML = 
+                "Welcome to JavaScript!"; 
+        } 
+    </script> 
+</html> 
+
+body { 
+    font-family: Arial; 
+    background-color: lightblue; 
+    text-align: center; 
+} 
+ 
+h1 { 
+    color: darkblue; 
+} 
+ 
+p { 
+    font-size: 20px; 
+    color: green; 
+} 
+ 
+button { 
+    padding: 10px 20px; 
+    font-size: 16px; 
+} 
+ 
