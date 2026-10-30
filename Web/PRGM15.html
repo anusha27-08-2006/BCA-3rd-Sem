@@ -1,0 +1,40 @@
+ 
+to N using java script. 
+ 
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Fibonacci Series</title> 
+</head> 
+ 
+<body> 
+ 
+    <h2>Fibonacci Series</h2> 
+ 
+    <button onclick="fibonacci()">Generate Series</button> 
+ 
+    <p id="result"></p> 
+ 
+</body> 
+<script> 
+        function fibonacci() { 
+            var n = parseInt(prompt("Enter the value of N:")); 
+ 
+            var a = 0; 
+            var b = 1; 
+            var series = ""; 
+ 
+            for (var i = 1; i <= n; i++) { 
+                series = series + a + " "; 
+ 
+                var c = a + b; 
+                a = b; 
+                b = c; 
+            } 
+ 
+            document.getElementById("result").innerHTML = 
+                "Fibonacci Series: " + series; 
+        } 
+    </script> 
+ 
+</html> 
